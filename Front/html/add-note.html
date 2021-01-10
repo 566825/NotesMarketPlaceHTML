@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Add Notes - Notes MarketPlace</title>
+
+    <!-- Website Logo -->
+    <link rel="shortcut icon" href="../images/logo/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/fontawesome.min.css">
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/4fa77e6d3c.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <section id="add-note">
+
+        <!-- Header -->
+        <div class="only-white-nav extra-style-nav">
+            <header class="site-header">
+                <div class="header-wrapper">
+        
+                    <!-- Mobile Menu Open Button -->
+                    <span id="mobile-nav-open-btn">&#9776;</span>
+        
+                    <div class="logo-wrapper">
+                        <a href="index.html" title="Site Logo">
+                            <img src="../images/logo/dark-logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="navigation-wrapper">
+                        <nav class="main-nav">
+                            <ul class="menu-navigation">
+                                <li>
+                                    <a class="hover-bottom-border" href="search-notes.html">Search Notes</a>
+                                </li>
+                                <li class="active">
+                                    <a class="hover-bottom-border" href="add-note.html">Sell Your Notes</a>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom-border" href="buyers-requests.html">Buyer Requests</a>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom-border" href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom-border" href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li class="logged-in-user-photo-li">
+                                    <div class="dropdown">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="logged-in-user-photo">
+                                                <img src="../images/testimonial/customer-1.png" alt="User Photo" class="rounded-circle">
+                                            </div>
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="user-profile.html">My Profile</a>
+                                          <a class="dropdown-item" href="my-downloads.html">My Downloads</a>
+                                          <a class="dropdown-item" href="my-sold-notes.html">My Sold Notes</a>
+                                          <a class="dropdown-item" href="my-rejected-notes.html">My Rejected Notes</a>
+                                          <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                          <a class="dropdown-item logout-btn-dropdown" href="login.html">Logout</a>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li>
+                                    <a class="btn btn-general btn-purple" href="login.html" title="Download"
+                                        role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                        <img class="logo-in-mobile-menu" src="../images/logo/dark-logo.png" alt="Notes Logo">
+                        <!-- Mobile Menu Close Button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+        
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li>
+                                    <a href="search-notes.html">Search Notes</a>
+                                </li>
+                                <li class="active">
+                                    <a href="add-note.html">Sell Your Notes</a>
+                                </li>
+                                <li>
+                                    <a href="buyers-requests.html">Buyer Requests</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html"">Contact Us</a>
+                                </li>
+                                <li class="logged-in-user-photo-li">
+                                    <div class="logged-in-user-photo">
+                                        <div class="dropdown">
+                                            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        
+                                                <img src="../images/testimonial/customer-1.png" alt="User Photo" class="rounded-circle">                                        
+                                            </a>
+                                        
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="user-profile.html">My Profile</a>
+                                                <a class="dropdown-item" href="my-downloads.html">My Downloads</a>
+                                                <a class="dropdown-item" href="my-sold-notes.html">My Sold Notes</a>
+                                                <a class="dropdown-item" href="my-rejected-notes.html">My Rejected Notes</a>
+                                                <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                                <a class="dropdown-item logout-btn-dropdown" href="login.html">Logout</a>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn btn-general btn-purple" href="login.html" title="Download"
+                                        role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Header ends -->
+
+        <!-- background -->
+        <div class="small-height-bg">
+            <p class="text-center">Add Notes</p>
+        </div>
+        <!-- background -->
+
+        <!-- details conatiner -->
+        <div class="general-box">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <p class="section-heading">Basic Note Details</p>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="row">
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Title *</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter your note title">
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleFormControlSelect1">Category *</label>
+                                        <select class="form-control input-box-style" id="exampleFormControlSelect1">
+                                            <option selected disabled>Select note category</option>
+                                            <option>Science</option>
+                                            <option>Commerce</option>
+                                        </select>
+                                        <div class="select-down-arrow"><img class="select-down-arrow-img"
+                                                src="../images/user-profile/down-arrow.png" alt="eye"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Display Picture</label>
+                                        <div id="uploadNoteDisplayPicture" class="form-control input-box-style upload-input-box">
+                                            <img src="../images/user-profile/upload.png" alt="Upload Profile Picture">
+                                            <p>Upload a picture</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Upload Notes *</label>
+                                        <div id="uploadYourNotes" class="form-control input-box-style upload-input-box">
+                                            <img src="../images/add-note/upload-note.png" alt="Upload your notes">
+                                            <p>Upload your notes</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleFormControlSelect1">Type</label>
+                                        <select class="form-control input-box-style" id="exampleFormControlSelect1">
+                                            <option selected disabled>Select your note type</option>
+                                            <option>Free</option>
+                                            <option>Paid</option>
+                                        </select>
+                                        <div class="select-down-arrow"><img class="select-down-arrow-img"
+                                                src="../images/user-profile/down-arrow.png" alt="eye"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Number of Pages</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter number of note pages">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="info-label" for="comment-questions">Description *</label>
+                                        <textarea class="form-control input-box-style" id="note-desc-textarea" placeholder="Enter note description..."></textarea>
+                                      </div>
+                                </div>
+            
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- details container -->           
+
+        <!-- details conatiner -->
+        <div class="general-box">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <p class="section-heading">Institution Information</p>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="row">
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleFormControlSelect1">Country *</label>
+                                        <select class="form-control input-box-style" id="exampleFormControlSelect1">
+                                            <option value="" disabled selected>Select your country</option>
+                                            <option>India</option>
+                                            <option>America</option>
+                                            <option>Canada</option>
+                                            <option>China</option>
+                                            <option>Peru</option>
+                                            <option>Polland</option>
+                                        </select>
+                                        <div class="select-down-arrow"><img class="select-down-arrow-img"
+                                                src="../images/user-profile/down-arrow.png" alt="eye"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Institute Name</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            placeholder="Enter your institute name">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- details container -->
+
+        <!-- details conatiner -->
+        <div class="general-box">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <p class="section-heading">Course Details</p>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="row">
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Course Name</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            placeholder="Enter your course name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Course Code</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            placeholder="Enter your course code">
+                                    </div>
+                                </div>
+
+            
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Professor / Lecturer</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            placeholder="Enter your Professor name">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- details container -->
+
+        <!-- details conatiner -->
+        <div class="general-box">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <p class="section-heading">Selling Information</p>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-md-6 col-sm-6">
+
+                                    <div class="form-group">
+                                        <label class="info-label" for="">Sell For *</label>
+                                        <div class="row no-gutters free-paid-radio-wrapper">
+
+                                            <label class="purple-radio-input">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <label class="info-label" for="">Free</label>
+                                            <label class="purple-radio-input">
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="info-label" for="">Paid</label>
+
+                                            <!-- <input type="radio" class="form-control input-box-style" id="free-radio-input">
+                                            <label class="info-label" for="">Free</label>
+                                            <input type="radio" class="form-control input-box-style" id="paid-radio-input">
+                                            <label class="info-label" for="">Paid</label>                                             -->
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Course Name</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            placeholder="Enter your course name">
+                                    </div>
+
+                                </div>    
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Note Preview</label>
+                                        <div id="uploadNotePreviewPicture" class="form-control input-box-style upload-input-box">
+                                            <img src="../images/user-profile/upload.png" alt="Upload Profile Picture">
+                                            <p>Upload a picture</p>
+                                        </div>
+                                    </div>
+                                </div>      
+                                
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="row no-gutters">
+                                        <div class="form-btn">
+                                            <button type="submit" class="btn btn-general btn-purple save-note-btn">Save</button>
+                                        </div>
+    
+                                        <div class="form-btn">
+                                            <button type="submit" class="btn btn-general btn-purple publish-note-btn">Publish</button>
+                                        </div>   
+                                    </div>                                 
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- details container -->
+
+        <!-- Footer  -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-12 text-left">
+                        <p>Copyright &copy; TatvaSoft All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-4 col-12 text-right">
+                        <ul class="social-list">
+                            <li><a class="facebook-img" href="#"><img src="../images/Homepage/facebook.png" alt=""></a></li>
+                            <li><a class="twitter-img" href="#"><img src="../images/Homepage/twitter.png" alt=""></a></li>
+                            <li><a class="linkedin-img" href="#"><img src="../images/Homepage/linkedin.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+    </section>
+
+    <!-- Java-scripts -->
+
+    <!-- JQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+    <!-- Java-scripts -->
+</body>
+</html>
