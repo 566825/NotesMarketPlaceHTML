@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Add Country - Notes MarketPlace</title>
+
+    <!-- Website Logo -->
+    <link rel="shortcut icon" href="../images/logo/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/fontawesome.min.css">
+
+    <!-- FontAwesome kit -->
+    <script src="https://kit.fontawesome.com/4fa77e6d3c.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <section id="add-country" class="admin-add-page">
+
+        <!-- Header -->
+        <div class="only-white-nav extra-style-nav only-white-nav-with-mb">
+            <header class="site-header">
+                <div class="header-wrapper">
+        
+                    <!-- Mobile Menu Open Button -->
+                    <span id="mobile-nav-open-btn">&#9776;</span>
+        
+                    <div class="logo-wrapper">
+                        <a href="index.html" title="Site Logo">
+                            <img src="../images/logo/dark-logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="navigation-wrapper">
+                        <nav class="main-nav">
+                            <ul class="menu-navigation">
+                                <li>
+                                    <a class="hover-bottom-border" href="dashboard.html">Dashboard</a>
+                                </li>
+                                <li>                                    
+                                    <div class="dropdown notes-btn-dropdown">
+                                        <a class="hover-bottom-border" role="button" id="notes-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="notes-dropdown-lable">
+                                          <a class="dropdown-item" href="notes-under-review.html">Notes Under Review</a>
+                                          <a class="dropdown-item" href="published-notes.html">Published Notes</a>
+                                          <a class="dropdown-item" href="downloaded-notes.html">Downloaded Notes</a>
+                                          <a class="dropdown-item" href="rejected-notes.html">Rejected Notes</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom-border" href="members.html">Members</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown reports-btn-dropdown">
+                                        <a class="hover-bottom-border" role="button" id="reports-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="reports-dropdown-lable">
+                                          <a class="dropdown-item" href="spam-reports.html">Spam Reports</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown settings-btn-dropdown">
+                                        <a class="hover-bottom-border" role="button" id="settings-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="settings-dropdown-lable">
+                                          <a class="dropdown-item" href="manage-system-configuration.html">Manage System Configuration</a>
+                                          <a class="dropdown-item" href="manage-administrator.html">Manage Administrator</a>
+                                          <a class="dropdown-item" href="manage-category.html">Manage Category</a>
+                                          <a class="dropdown-item" href="manage-type.html">Manage Type</a>
+                                          <a class="dropdown-item" href="manage-country.html">Manage Countries</a>
+                                        </div>
+                                    </div>                                </li>
+                                <li class="logged-in-user-photo-li">
+                                    <div class="dropdown user-picture-dropdown">
+                                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="logged-in-user-photo">
+                                                <img src="../images/Dashboard/user-img.png" alt="User Photo" class="rounded-circle">
+                                            </div>
+                                        </a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="my-profile.html">Update Profile</a>
+                                          <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                          <a class="dropdown-item logout-btn-dropdown" href="login.html">Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn btn-general btn-purple" href="login.html" title="Download"
+                                        role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                        <img class="logo-in-mobile-menu" src="../images/logo/dark-logo.png" alt="Notes Logo">
+                        <!-- Mobile Menu Close Button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+        
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dashboard.html">Dashboard</a>
+                                </li>
+                                <li>                                    
+                                    <div class="dropdown notes-btn-dropdown">
+                                        <a role="button" id="notes-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="notes-dropdown-lable">
+                                          <a class="dropdown-item" href="notes-under-review.html">Notes Under Review</a>
+                                          <a class="dropdown-item" href="published-notes.html">Published Notes</a>
+                                          <a class="dropdown-item" href="downloaded-notes.html">Downloaded Notes</a>
+                                          <a class="dropdown-item" href="rejected-notes.html">Rejected Notes</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="members.html">Members</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown reports-btn-dropdown">
+                                        <a role="button" id="reports-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reports</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="reports-dropdown-lable">
+                                          <a class="dropdown-item" href="spam-reports.html">Spam Reports</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown settings-btn-dropdown">
+                                        <a role="button" id="settings-dropdown-lable" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                                      
+                                        <div class="dropdown-menu" aria-labelledby="settings-dropdown-lable">
+                                          <a class="dropdown-item" href="manage-system-configuration.html">Manage System Configuration</a>
+                                          <a class="dropdown-item" href="manage-administrator.html">Manage Administrator</a>
+                                          <a class="dropdown-item" href="manage-category.html">Manage Category</a>
+                                          <a class="dropdown-item" href="manage-type.html">Manage Type</a>
+                                          <a class="dropdown-item" href="manage-country.html">Manage Countries</a>
+                                        </div>
+                                    </div>                                </li>
+                                <li class="logged-in-user-photo-li">
+                                    <div class="logged-in-user-photo">
+                                        <div class="dropdown">
+                                            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                        
+                                                <img src="../images/Dashboard/user-img.png" alt="User Photo" class="rounded-circle">                                        
+                                            </a>
+                                        
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="my-profile.html">Update Profile</a>
+                                                <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                                <a class="dropdown-item logout-btn-dropdown" href="login.html">Logout</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn btn-general btn-purple" href="login.html" title="Download"
+                                        role="button">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Header ends -->
+
+        <!-- details conatiner -->
+        <div class="general-box">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <p class="section-heading">Add Country</p>
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <div class="row">
+
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Country Name *</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter country name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="info-label" for="exampleInputEmail1">Country Code *</label>
+                                        <input type="text" class="form-control input-box-style" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter country code">
+                                    </div>            
+
+                                    <div class="form-btn">
+                                        <button type="submit" class="btn btn-general btn-purple">Submit</button>
+                                    </div>
+                                    
+                                </div>
+            
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- details container --> 
+
+        <!-- Footer  -->
+        <footer>
+            <div class="container">
+                <div class="row no-gutters">
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-12 text-left">
+                        <p class="version-footer">Version : 1.1.24</p>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12 text-right">
+                        <p class="copyright-footer">Copyright &copy; TatvaSoft All Rights Reserved.</p>
+                    </div>     
+
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+
+    </section>
+
+    <!-- Java-scripts -->
+
+    <!-- JQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+    
+
+    <!-- Java-scripts -->
+</body>
+
+</html>
