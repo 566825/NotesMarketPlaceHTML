@@ -60,7 +60,7 @@
                         </nav>
                     </div>
 
-                    <!-- Mobile Menu  -->
+                    <!-- Mobile Menu-->
                     <div id="mobile-nav">
                         <img class="logo-in-mobile-menu" src="../images/logo/dark-logo.png" alt="Notes Logo">
                         <!-- Mobile Menu Close Button -->
