@@ -19,10 +19,23 @@
                     $NoteRate = $_POST['NoteRate'];
                     $NoteComments = $_POST['Comments'];
 
-                    $add_note_review = "INSERT INTO seller_notes_reviews (NoteID, ReviewedBy, AgainstDownloadID, Ratings, Comments, CreatedBy) ";
-                    $add_note_review .= "VALUES ({$ReviewNoteID}, {$UserID}, {$AgainstDownloadID}, {$NoteRate}, '{$NoteComments}', {$UserID}) ";
-                    $add_note_review_query = mysqli_query($connection, $add_note_review);
-                    confirmQuery($add_note_review_query);
+                    // check if already reviewed
+                    $check_reviews = "SELECT * FROM seller_notes_reviews WHERE AgainstDownloadID = {$AgainstDownloadID} ";
+                    $check_reviews_query = mysqli_query($connection, $check_reviews);
+                    confirmQuery($check_reviews_query);
+                    $check_reviews_count = mysqli_num_rows($check_reviews_query);
+
+                    if ($check_reviews_count == 0) {
+                        $add_note_review = "INSERT INTO seller_notes_reviews (NoteID, ReviewedBy, AgainstDownloadID, Ratings, Comments, CreatedBy) ";
+                        $add_note_review .= "VALUES ({$ReviewNoteID}, {$UserID}, {$AgainstDownloadID}, {$NoteRate}, '{$NoteComments}', {$UserID}) ";
+                        $add_note_review_query = mysqli_query($connection, $add_note_review);
+                        confirmQuery($add_note_review_query);
+                    } else {
+                        $update_note_review = "UPDATE seller_notes_reviews SET Ratings = {$NoteRate}, Comments = '{$NoteComments}' WHERE AgainstDownloadID = {$AgainstDownloadID} ";
+                        $update_note_review_query = mysqli_query($connection, $update_note_review);
+                        confirmQuery($update_note_review_query);
+                    }
+                    
                     $_SESSION['NoteReviewAdded'] = '';
                 }
                 ?>

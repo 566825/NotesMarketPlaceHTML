@@ -14,10 +14,22 @@
                     $AgainstDownloadID = substr($data_note_id, strpos($data_note_id, '-') + 1);
                     $NoteRemarks = $_POST['NoteRemarks'];
 
-                    $add_note_report = "INSERT INTO seller_notes_reported_issues (NoteID, ReportedBy, AgainstDownloadID, Remarks, CreatedBy) ";
-                    $add_note_report .= "VALUES ({$ReportNoteID}, {$UserID}, {$AgainstDownloadID}, '{$NoteRemarks}', {$UserID}) ";
-                    $add_note_report_query = mysqli_query($connection, $add_note_report);
-                    confirmQuery($add_note_report_query);
+                    // check if already reported
+                    $check_reports = "SELECT * FROM seller_notes_reported_issues WHERE AgainstDownloadID = {$AgainstDownloadID} ";
+                    $check_reports_query = mysqli_query($connection, $check_reports);
+                    confirmQuery($check_reports_query);
+                    $check_reports_count = mysqli_num_rows($check_reports_query);
+
+                    if ($check_reports_count == 0) {
+                        $add_note_report = "INSERT INTO seller_notes_reported_issues (NoteID, ReportedBy, AgainstDownloadID, Remarks, CreatedBy) ";
+                        $add_note_report .= "VALUES ({$ReportNoteID}, {$UserID}, {$AgainstDownloadID}, '{$NoteRemarks}', {$UserID}) ";
+                        $add_note_report_query = mysqli_query($connection, $add_note_report);
+                        confirmQuery($add_note_report_query);
+                    } else {
+                        $update_note_report = "UPDATE seller_notes_reported_issues SET Remarks = '{$NoteRemarks}' WHERE AgainstDownloadID = {$AgainstDownloadID} ";
+                        $update_note_report_query = mysqli_query($connection, $update_note_report);
+                        confirmQuery($update_note_report_query);
+                    }                   
 
                     // sending mail to admin that user has marked note as an inappropriate
                     // getting buyer deatils

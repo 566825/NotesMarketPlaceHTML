@@ -76,8 +76,8 @@ if (isset($_POST['searched_keyword'])) {
                 $ratings = "= " . $_POST['selected_rating'];
             }
 
-            $select_total_notes = "SELECT DISTINCT n.NoteID, n.SellerID, n.DisplayPicture, n.Title, n.UniversityName, n.Country, n.NumberOfPages, n.PublishedDate, r.Ratings FROM seller_notes n JOIN seller_notes_reviews r ON n.NoteID = r.NoteID WHERE n.IsActive = 1 AND r.Ratings " . $ratings . $selected_key;
-            $select_notes = "SELECT DISTINCT n.NoteID, n.SellerID, n.DisplayPicture, n.Title, n.UniversityName, n.Country, n.NumberOfPages, n.PublishedDate, r.Ratings FROM seller_notes n JOIN seller_notes_reviews r ON n.NoteID = r.NoteID WHERE n.IsActive = 1 AND r.Ratings " . $ratings . $selected_key . " LIMIT $start_from, $limit";            
+            $select_total_notes = "SELECT n.* , AVG(Ratings) AS Ratings FROM seller_notes n JOIN seller_notes_reviews r ON n.NoteID = r.NoteID WHERE n.Status = 9 AND n.IsActive = 1" . $selected_key . " GROUP BY n.NoteID HAVING Ratings " . $ratings;
+            $select_notes = "SELECT n.* , AVG(Ratings) AS Ratings FROM seller_notes n JOIN seller_notes_reviews r ON n.NoteID = r.NoteID WHERE n.Status = 9 AND n.IsActive = 1" . $selected_key . " GROUP BY n.NoteID HAVING Ratings " . $ratings . " LIMIT $start_from, $limit";            
         }
     }
     
