@@ -3,9 +3,9 @@
 <?php include "../includes/modals/logout-modal.php"; ?>
 
 <body>
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div id="status">&nbsp;</div>
-    </div> -->
+    </div>
 
     <section id="home-page">
 
