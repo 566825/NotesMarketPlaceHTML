@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2021 at 11:57 AM
+-- Generation Time: Apr 10, 2021 at 12:00 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -453,8 +453,7 @@ INSERT INTO `users` (`UserID`, `RoleID`, `FirstName`, `LastName`, `EmailID`, `Pa
 (123, 3, 'Sherlock', 'Holmes', 'c@gmail.com', 'sss', b'1', '2020-11-17 21:00:06', NULL, '2021-04-01 20:45:50', NULL, b'1'),
 (124, 2, 'Jay', 'Patel', 'z@gmail.com', 'sss', b'1', '2021-03-29 11:59:57', NULL, '2021-04-03 14:10:57', 126, b'1'),
 (125, 2, 'Bruce', 'Wayne', 'j@gmail.com', 'sss', b'1', '2021-03-31 11:11:55', NULL, '2021-04-03 16:36:37', 125, b'1'),
-(126, 1, 'Joy', 'Raty', 'q@gmail.com', 'sss', b'1', '2021-04-02 20:26:07', NULL, NULL, NULL, b'1'),
-(138, 2, 'dfsfsd', 'sadfsaf', 'g@gmail.com', 'sss', b'1', '2021-04-06 15:21:49', 126, '2021-04-06 15:22:29', 138, b'1');
+(126, 1, 'Joy', 'Raty', 'q@gmail.com', 'sss', b'1', '2021-04-02 20:26:07', NULL, NULL, NULL, b'1');
 
 -- --------------------------------------------------------
 
