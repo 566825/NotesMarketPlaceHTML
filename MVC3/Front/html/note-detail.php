@@ -573,6 +573,11 @@
             confirmQuery($seller_details_query);
             $seller_details_row = mysqli_fetch_assoc($seller_details_query);
             $SellerFullName = $seller_details_row['FirstName'] . " " . $seller_details_row['LastName'];
+            
+            // contact no.
+            $sys_config = mysqli_query($connection, "SELECT * FROM system_configuration c WHERE c.Key = 'SupportContactNumber' ");
+            confirmQuery($sys_config);
+            $contactNumber = mysqli_fetch_assoc($sys_config)['Value'];
 
             include "../includes/modals/thanks-for-buying-modal.php";
         }

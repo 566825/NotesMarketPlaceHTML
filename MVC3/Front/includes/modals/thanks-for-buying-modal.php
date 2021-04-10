@@ -13,7 +13,7 @@
                         <p class="thank-heading">Thank you for purchasing!</p>
                         <p class="dear-buyer-name">Dear <?php echo $BuyerName; ?>,</p>
                         <p>As this is paid notes - you need to pay to seller <?php echo $SellerFullName; ?> offline. We will send him an email that you want to download this note. He may contact you further for payment process completion.</p>
-                        <p>In case, you have urgency,<br>Please contact us on +919658745692.</p>
+                        <p>In case, you have urgency,<br>Please contact us on <?php echo $contactNumber; ?>.</p>
                         <p>Once he receives the payment and acknowledgde us - selected notes you can see over my downloads tab for download.</p>
                         <p>Have a good day.</p>
                     </div>                    
