@@ -6,6 +6,11 @@ if (!isset($_SESSION['UserLoggedIn'])) {
     header("Location: ../../Front/html/login.php");
     die();
 }
+
+if ($_SESSION['UserRole'] != 1) {
+    header("Location: dashboard.php");
+    die();
+}
 ?>
 
 <body>

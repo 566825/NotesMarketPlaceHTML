@@ -7,6 +7,11 @@ if (!isset($_SESSION['UserLoggedIn'])) {
     die();
 }
 
+if ($_SESSION['UserRole'] != 1) {
+    header("Location: dashboard.php");
+    die();
+}
+
 // deacticate admin
 if (isset($_GET['admin_id'])) {
     $get_member_id = $_GET['admin_id'];
